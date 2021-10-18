@@ -23,7 +23,7 @@
             android:padding="@dimen/_10sdp"
             android:background="@color/white">
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_item_caption"

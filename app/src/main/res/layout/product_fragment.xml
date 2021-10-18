@@ -7,7 +7,7 @@
 
         <variable
             name="viewmodel"
-            type="com.example.privatelyurs.ui.fragment.product.ProductViewModel" />
+            type="com.example.DemoShopping.ui.fragment.product.ProductViewModel" />
     </data>
     <RelativeLayout
         android:layout_width="match_parent"

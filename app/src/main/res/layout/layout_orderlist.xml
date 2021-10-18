@@ -37,7 +37,7 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_weight="0.88">
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_item_delivery"
@@ -45,7 +45,7 @@
                 android:textSize="@dimen/_13sdp"
                 android:textColor="@color/pink"/>
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_item_name"
@@ -60,7 +60,7 @@
                 android:orientation="horizontal"
                 android:paddingTop="@dimen/_3sdp">
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:id="@+id/tv_item_price_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/tv_item_oldprice_text"

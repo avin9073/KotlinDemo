@@ -8,7 +8,7 @@
 
         <variable
             name="viewmodel"
-            type="com.example.privatelyurs.ui.fragment.orders.OrderViewModel" />
+            type="com.example.DemoShopping.ui.fragment.orders.OrderViewModel" />
     </data>
 
 <RelativeLayout

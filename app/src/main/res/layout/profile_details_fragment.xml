@@ -8,7 +8,7 @@
 
         <variable
             name="viewmodel"
-            type="com.example.privatelyurs.ui.fragment.profiledetails.ProfileDetailsViewModel" />
+            type="com.example.DemoShopping.ui.fragment.profiledetails.ProfileDetailsViewModel" />
     </data>
 
 
@@ -83,7 +83,7 @@
 
                     </FrameLayout>
 
-                    <com.example.privatelyurs.ui.customview.CustomTextview
+                    <com.example.DemoShopping.ui.customview.CustomTextview
                         android:id="@+id/tv_profile_email"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
 
                 </LinearLayout>
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/full_name"
@@ -104,7 +104,7 @@
                     android:paddingLeft="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_20sdp"/>
 
-                <com.example.privatelyurs.ui.customview.CustomEdittext
+                <com.example.DemoShopping.ui.customview.CustomEdittext
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/_10sdp"
@@ -119,7 +119,7 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/_13sdp"/>
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/email"
@@ -128,7 +128,7 @@
                     android:paddingLeft="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_20sdp"/>
 
-                <com.example.privatelyurs.ui.customview.CustomEdittext
+                <com.example.DemoShopping.ui.customview.CustomEdittext
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/_10sdp"
@@ -143,7 +143,7 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/_13sdp"/>
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/mobile_number"
@@ -152,7 +152,7 @@
                     android:paddingLeft="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_20sdp"/>
 
-                <com.example.privatelyurs.ui.customview.CustomEdittext
+                <com.example.DemoShopping.ui.customview.CustomEdittext
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/_10sdp"
@@ -167,7 +167,7 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/_13sdp"/>
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/alt_mob_number"
@@ -176,7 +176,7 @@
                     android:paddingLeft="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_20sdp"/>
 
-                <com.example.privatelyurs.ui.customview.CustomEdittext
+                <com.example.DemoShopping.ui.customview.CustomEdittext
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/_10sdp"
@@ -191,7 +191,7 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/_13sdp"/>
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/_10sdp"
@@ -218,7 +218,7 @@
             android:background="@color/white"
             android:padding="@dimen/_10sdp">
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/save_details"

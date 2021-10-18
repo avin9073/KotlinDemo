@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Privately Urs</string>
+    <string name="app_name">Demo Shopping</string>
     <string name="no_internet_msg">No Network Access</string>
     <string name="app_close_alert">Please press <b>BACK</b> again to exit</string>
     <string name="something_went_wrong_pls_try_again">Something went wrong. Please try again !!</string>

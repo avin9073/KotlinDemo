@@ -8,7 +8,7 @@
 
         <variable
             name="viewmodel"
-            type="com.example.privatelyurs.ui.fragment.orderdetails.OrderDetailsViewModel" />
+            type="com.example.DemoShopping.ui.fragment.orderdetails.OrderDetailsViewModel" />
     </data>
 
 <LinearLayout
@@ -30,7 +30,7 @@
         android:paddingLeft="@dimen/_15sdp"
         android:background="@color/white">
 
-        <com.example.privatelyurs.ui.customview.CustomTextview
+        <com.example.DemoShopping.ui.customview.CustomTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Delivered"
@@ -38,14 +38,14 @@
             android:textSize="@dimen/_12sdp"
             android:layout_marginTop="@dimen/_2sdp"/>
 
-        <com.example.privatelyurs.ui.customview.CustomTextview
+        <com.example.DemoShopping.ui.customview.CustomTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="on 12 Feb,2021"
             android:textSize="@dimen/_14sdp"
             android:layout_marginTop="@dimen/_2sdp"/>
 
-        <com.example.privatelyurs.ui.customview.CustomTextview
+        <com.example.DemoShopping.ui.customview.CustomTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Order Id"
@@ -53,7 +53,7 @@
             android:textSize="@dimen/_15sdp"
             android:layout_marginTop="@dimen/_13sdp"/>
 
-        <com.example.privatelyurs.ui.customview.CustomTextview
+        <com.example.DemoShopping.ui.customview.CustomTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="123456789"
@@ -71,7 +71,7 @@
         android:background="@color/white"
         android:orientation="vertical">
 
-        <com.example.privatelyurs.ui.customview.CustomTextview
+        <com.example.DemoShopping.ui.customview.CustomTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Items"
@@ -114,7 +114,7 @@
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_weight="0.88">
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/tv_item_name"
@@ -129,7 +129,7 @@
                     android:orientation="horizontal"
                     android:paddingTop="@dimen/_3sdp">
 
-                    <com.example.privatelyurs.ui.customview.CustomTextview
+                    <com.example.DemoShopping.ui.customview.CustomTextview
                         android:id="@+id/tv_item_price_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -138,7 +138,7 @@
                         android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
 
-                    <com.example.privatelyurs.ui.customview.CustomTextview
+                    <com.example.DemoShopping.ui.customview.CustomTextview
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/tv_item_oldprice_text"
@@ -150,7 +150,7 @@
 
                 </LinearLayout>
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/tv_item_disc_text"
@@ -175,7 +175,7 @@
         android:background="@color/white"
         android:orientation="vertical">
 
-        <com.example.privatelyurs.ui.customview.CustomTextview
+        <com.example.DemoShopping.ui.customview.CustomTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Delivery Locations"
@@ -208,7 +208,7 @@
 
             </androidx.cardview.widget.CardView>
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
@@ -232,7 +232,7 @@
         android:background="@color/white"
         android:orientation="vertical">
 
-        <com.example.privatelyurs.ui.customview.CustomTextview
+        <com.example.DemoShopping.ui.customview.CustomTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Payment"
@@ -248,14 +248,14 @@
             android:orientation="horizontal"
             android:weightSum="1">
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sub Total"
                 android:textSize="@dimen/_12sdp"
                 android:layout_weight=".90"/>
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1266.25"
@@ -273,14 +273,14 @@
             android:orientation="horizontal"
             android:weightSum="1">
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Shipping"
                 android:textSize="@dimen/_12sdp"
                 android:layout_weight=".90"/>
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Free"
@@ -300,14 +300,14 @@
             android:orientation="horizontal"
             android:weightSum="1">
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Total"
                 android:textSize="@dimen/_12sdp"
                 android:layout_weight=".90"/>
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1266.25"
@@ -320,7 +320,7 @@
 
     </LinearLayout>
 
-    <com.example.privatelyurs.ui.customview.CustomTextview
+    <com.example.DemoShopping.ui.customview.CustomTextview
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_2sdp"

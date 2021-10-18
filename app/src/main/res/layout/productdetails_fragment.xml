@@ -7,7 +7,7 @@
 
         <variable
             name="viewmodel"
-            type="com.example.privatelyurs.ui.fragment.productdetails.ProductDetailsViewModel" />
+            type="com.example.DemoShopping.ui.fragment.productdetails.ProductDetailsViewModel" />
     </data>
 
     <RelativeLayout
@@ -40,7 +40,7 @@
                         android:src="@drawable/login_back_image"
                         android:scaleType="fitXY"/>
 
-                    <com.example.privatelyurs.ui.customview.CustomTextview
+                    <com.example.DemoShopping.ui.customview.CustomTextview
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/tv_item_name"
@@ -60,7 +60,7 @@
                         android:layout_below="@id/tv_item_name"
                         >
 
-                        <com.example.privatelyurs.ui.customview.CustomTextview
+                        <com.example.DemoShopping.ui.customview.CustomTextview
                             android:id="@+id/tv_item_price_text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
                             android:textSize="@dimen/_12sdp"
                             android:textStyle="bold" />
 
-                        <com.example.privatelyurs.ui.customview.CustomTextview
+                        <com.example.DemoShopping.ui.customview.CustomTextview
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/tv_item_oldprice_text"
@@ -81,7 +81,7 @@
 
                     </LinearLayout>
 
-                    <com.example.privatelyurs.ui.customview.CustomTextview
+                    <com.example.DemoShopping.ui.customview.CustomTextview
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/tv_item_name"
@@ -106,14 +106,14 @@
                     android:paddingTop="@dimen/_10sdp"
                     android:paddingBottom="@dimen/_10sdp">
 
-                    <com.example.privatelyurs.ui.customview.CustomTextview
+                    <com.example.DemoShopping.ui.customview.CustomTextview
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="SKU:LC3144"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_13sdp"/>
 
-                    <com.example.privatelyurs.ui.customview.CustomTextview
+                    <com.example.DemoShopping.ui.customview.CustomTextview
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingTop="@dimen/_10sdp"
@@ -121,7 +121,7 @@
                         android:textColor="@color/black"
                         android:textSize="@dimen/_13sdp"/>
 
-                    <com.example.privatelyurs.ui.customview.CustomTextview
+                    <com.example.DemoShopping.ui.customview.CustomTextview
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingTop="@dimen/_10sdp"
@@ -129,7 +129,7 @@
                         android:text="The sexiest Bodysuit ever whichfeatures slick lame trim, mesh insert, ultra stretchy."
                         android:textSize="@dimen/_11sdp"/>
 
-                    <com.example.privatelyurs.ui.customview.CustomTextview
+                    <com.example.DemoShopping.ui.customview.CustomTextview
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingTop="@dimen/_10sdp"
@@ -137,7 +137,7 @@
                         android:textColor="@color/black"
                         android:textSize="@dimen/_13sdp"/>
 
-                    <com.example.privatelyurs.ui.customview.CustomTextview
+                    <com.example.DemoShopping.ui.customview.CustomTextview
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingTop="@dimen/_10sdp"
@@ -147,7 +147,7 @@
 
                 </LinearLayout>
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/tv_rel_products"
@@ -183,7 +183,7 @@
                     android:orientation="horizontal"
                     android:weightSum="1">
 
-                    <com.example.privatelyurs.ui.customview.CustomTextview
+                    <com.example.DemoShopping.ui.customview.CustomTextview
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Wishlist"
@@ -196,7 +196,7 @@
                         android:backgroundTint="@color/pink"
                         android:layout_weight="0.4"/>
 
-                    <com.example.privatelyurs.ui.customview.CustomTextview
+                    <com.example.DemoShopping.ui.customview.CustomTextview
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Add to Cart"

@@ -8,14 +8,14 @@
 
         <variable
             name="viewmodel"
-            type="com.example.privatelyurs.ui.fragment.wishlist.WishListFragmetViewModel" />
+            type="com.example.DemoShopping.ui.fragment.wishlist.WishListFragmetViewModel" />
     </data>
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundcolor">
 
-    <com.example.privatelyurs.ui.customview.CustomTextview
+    <com.example.DemoShopping.ui.customview.CustomTextview
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/wishlist_text"

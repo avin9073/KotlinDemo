@@ -8,7 +8,7 @@
 
         <variable
             name="viewmodel"
-            type="com.example.privatelyurs.ui.fragment.profile.ProfileFragmentViewModel" />
+            type="com.example.DemoShopping.ui.fragment.profile.ProfileFragmentViewModel" />
     </data>
 <RelativeLayout
     android:layout_width="match_parent"
@@ -20,7 +20,7 @@
         android:id="@+id/image_rl_layout"
         android:background="@color/backgroundcolor">
 
-        <com.example.privatelyurs.ui.customview.CustomTextview
+        <com.example.DemoShopping.ui.customview.CustomTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/account_text"
@@ -45,7 +45,7 @@
             app:civ_border_color="@color/gray"
             app:civ_border_width="1dp" />
 
-        <com.example.privatelyurs.ui.customview.CustomTextview
+        <com.example.DemoShopping.ui.customview.CustomTextview
             android:id="@+id/tv_profile_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
             android:paddingRight="@dimen/_20sdp"
             android:weightSum="1">
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/profile_details"
@@ -110,7 +110,7 @@
             android:paddingRight="@dimen/_20sdp"
             android:weightSum="1">
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/orders"
@@ -145,7 +145,7 @@
             android:paddingRight="@dimen/_20sdp"
             android:weightSum="1">
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/wishlist"
@@ -180,7 +180,7 @@
             android:paddingRight="@dimen/_20sdp"
             android:weightSum="1">
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/address_book"

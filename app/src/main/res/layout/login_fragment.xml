@@ -9,7 +9,7 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.example.privatelyurs.ui.fragment.login.LoginViewModel" />
+            type="com.example.DemoShopping.ui.fragment.login.LoginViewModel" />
     </data>
 
     <RelativeLayout
@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/login_back_image">
 
-        <com.example.privatelyurs.ui.customview.CustomTextview
+        <com.example.DemoShopping.ui.customview.CustomTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/signin_text"
@@ -28,7 +28,7 @@
             android:paddingLeft="@dimen/_15sdp"
             android:layout_marginTop="@dimen/_50sdp"/>
 
-        <com.example.privatelyurs.ui.customview.CustomTextview
+        <com.example.DemoShopping.ui.customview.CustomTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/welcome_text"
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/email"
@@ -60,7 +60,7 @@
                     android:paddingLeft="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_20sdp"/>
 
-                <com.example.privatelyurs.ui.customview.CustomEdittext
+                <com.example.DemoShopping.ui.customview.CustomEdittext
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/_10sdp"
@@ -75,7 +75,7 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/_13sdp"/>
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:id="@+id/tv_error_email_msz"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                     android:textSize="@dimen/_13sdp" />
 
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/password"
@@ -98,7 +98,7 @@
                     android:paddingLeft="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_20sdp"/>
 
-                <com.example.privatelyurs.ui.customview.CustomEdittext
+                <com.example.DemoShopping.ui.customview.CustomEdittext
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/_10sdp"
@@ -111,7 +111,7 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/_13sdp"/>
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:id="@+id/tv_error_email_password"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -125,7 +125,7 @@
                     android:textSize="@dimen/_13sdp" />
 
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/lost_password"
@@ -136,7 +136,7 @@
                     android:paddingRight="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_20sdp"/>
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/sign_in"
@@ -161,13 +161,13 @@
                 android:layout_marginBottom="@dimen/_40sdp"
                 android:gravity="center">
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/new_user"
                     android:textSize="@dimen/_15sdp"/>
 
-                <com.example.privatelyurs.ui.customview.CustomTextview
+                <com.example.DemoShopping.ui.customview.CustomTextview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/create_account"

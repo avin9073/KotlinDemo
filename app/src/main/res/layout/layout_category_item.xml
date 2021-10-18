@@ -23,7 +23,7 @@
                 android:scaleType="fitXY"
                 />
 
-            <com.example.privatelyurs.ui.customview.CustomTextview
+            <com.example.DemoShopping.ui.customview.CustomTextview
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvItemName"
