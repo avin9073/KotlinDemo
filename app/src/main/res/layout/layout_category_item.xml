@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:orientation="vertical"
+        android:background="@drawable/border_shape">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/_15sdp"
+            android:elevation="@dimen/_15sdp">
+
+            <ImageView
+                android:id="@+id/roundedImageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                android:src="@drawable/login_back_image"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                />
+
+            <com.example.privatelyurs.ui.customview.CustomTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvItemName"
+                android:layout_gravity="center_horizontal|bottom"
+                android:gravity="center"
+                android:padding="10dip"
+                android:textStyle="bold"
+                android:background="#B3FFFFFF"
+                android:textColor="@color/black"
+                android:text="Golden Gate"
+                android:textSize="@dimen/_13sdp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.example.privatelyurs.ui.activity.dashboard.DashboardViewModel" />
+    </data>
+
+
+
+    <RelativeLayout
+        android:id="@+id/dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.DashboardActivity">
+
+        <RelativeLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/activity_main"
+            android:layout_above="@id/bottom_tab_View"/>
+
+        <LinearLayout
+            android:id="@+id/bottom_tab_View"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            app:mutableVisibility="@{viewmodel.getBottomViewVisibility()}">
+
+            <ImageView
+                android:id="@+id/home_icon_Image"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_home_icon_deselect"
+                android:onClick="@{() -> viewmodel.onHomePageSelected()}"/>
+
+            <ImageView
+                android:id="@+id/menu_icon_image"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_category_icon_deselect"
+                android:onClick="@{()-> viewmodel.onCategorySelected()}"/>
+
+            <ImageView
+                android:id="@+id/wishlist_icon_image"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_wishlist_icon_deselect"
+                android:onClick="@{()-> viewmodel.onWishlistSelected()}"/>
+
+            <ImageView
+                android:id="@+id/profile_icon_image"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_account_icon_deselect"
+                android:onClick="@{()-> viewmodel.onProfileSelected()}"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

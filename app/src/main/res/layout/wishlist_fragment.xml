@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.example.privatelyurs.ui.fragment.wishlist.WishListFragmetViewModel" />
+    </data>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor">
+
+    <com.example.privatelyurs.ui.customview.CustomTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wishlist_text"
+        android:text="@string/wishlist"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:textSize="@dimen/_25sdp"/>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_category"
+        android:layout_below="@+id/wishlist_text"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+</RelativeLayout>
+
+</layout>

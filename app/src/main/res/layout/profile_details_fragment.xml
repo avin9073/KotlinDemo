@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.example.privatelyurs.ui.fragment.profiledetails.ProfileDetailsViewModel" />
+    </data>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"
+            android:id="@+id/view_line"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_below="@+id/view_line"
+            android:layout_above="@+id/save_button">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backgroundcolor">
+
+                <LinearLayout
+                    android:id="@+id/ll_profile_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:animateLayoutChanges="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <FrameLayout
+                        android:id="@+id/fl_1"
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="@dimen/_180sdp"
+                        android:layout_marginTop="10dp"
+                        android:animateLayoutChanges="true">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_profile_img"
+                            android:layout_width="@dimen/_170sdp"
+                            android:layout_height="@dimen/_170sdp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_profile_image_placeholder"
+                            android:scaleType="centerCrop"
+                            android:visibility="visible" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_open_camera"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:src="@drawable/ic_edit_info_pic_add_plus" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar1"
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+
+                    <com.example.privatelyurs.ui.customview.CustomTextview
+                        android:id="@+id/tv_profile_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp" />
+
+
+                </LinearLayout>
+
+                <com.example.privatelyurs.ui.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_name"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"/>
+
+                <com.example.privatelyurs.ui.customview.CustomEdittext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/editshape_background"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:text="@={viewmodel.strFullName}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <com.example.privatelyurs.ui.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"/>
+
+                <com.example.privatelyurs.ui.customview.CustomEdittext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/editshape_background"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:text="@={viewmodel.strEmail}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <com.example.privatelyurs.ui.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile_number"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"/>
+
+                <com.example.privatelyurs.ui.customview.CustomEdittext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/editshape_background"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:text="@={viewmodel.strMobileNumber}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <com.example.privatelyurs.ui.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alt_mob_number"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"/>
+
+                <com.example.privatelyurs.ui.customview.CustomEdittext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/editshape_background"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:text="@={viewmodel.strAltMobileNumber}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <com.example.privatelyurs.ui.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/editshape_background"
+                    android:text="@string/change_password"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:textColor="@color/pink"
+                    android:onClick="@{() -> viewmodel.callChangePassword()}"
+                    android:textSize="@dimen/_13sdp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/save_button"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:padding="@dimen/_10sdp">
+
+            <com.example.privatelyurs.ui.customview.CustomTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save_details"
+                android:gravity="center"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/white"
+                android:background="@drawable/signinbutton_background_shape"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:layout_gravity="center" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

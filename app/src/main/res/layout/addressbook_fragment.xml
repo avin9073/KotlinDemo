@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<data>
+
+<variable
+    name="viewmodel"
+    type="com.example.privatelyurs.ui.fragment.addressbook.AddressBookViewModel" />
+</data>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.example.privatelyurs.ui.customview.CustomTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+Add New Address"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/black"
+        android:padding="@dimen/_10sdp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:elevation="@dimen/_2sdp"
+        android:background="@color/backgroundcolor" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_addressbook"
+        android:layout_marginTop="@dimen/_2sdp"/>
+
+</LinearLayout>
+
+</layout>

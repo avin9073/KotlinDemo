@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.privatelyurs.ui.customview.CustomTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name"
+        android:text="@string/name"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"/>
+
+    <com.example.privatelyurs.ui.customview.CustomTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_address"
+        android:text="Address"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="@dimen/_10sdp"/>
+
+    <LinearLayout
+        android:id="@+id/tabView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/backgroundcolor"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.example.privatelyurs.ui.customview.CustomTextview
+                android:id="@+id/pendingSelectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.example.privatelyurs.ui.customview.CustomTextview
+                android:id="@+id/historyselectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/_12sdp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:elevation="@dimen/_2sdp"
+        android:background="@color/backgroundcolor" />
+
+
+
+</LinearLayout>
+
+
+</layout>

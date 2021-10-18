@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.example.privatelyurs"
+        minSdkVersion versions.min_sdk_library
+        targetSdkVersion versions.target_sdk
+        versionCode versions.version_code
+        versionName versions.version_name
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    androidExtensions {
+        experimental = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testImplementation "junit:junit:$versions.junit"
+    androidTestImplementation "androidx.test.ext:junit:$versions.androidx_test_junit"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$versions.espresso"
+    implementation 'com.google.android.material:material:1.2.1'
+
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin_lang"
+    implementation "androidx.appcompat:appcompat:$versions.androidx_appcompat"
+    implementation "androidx.core:core-ktx:$versions.androidx_core_ktx"
+    implementation "androidx.recyclerview:recyclerview:$versions.recyclerview_version"
+    implementation "androidx.multidex:multidex:$versions.multidex_version"
+    implementation "com.nostra13.universalimageloader:universal-image-loader:$versions.image_loader_version"
+
+
+    // Koin for Android - ViewModel features
+
+    implementation "org.koin:koin-android:$versions.koin_version"
+    implementation "org.koin:koin-androidx-viewmodel:$versions.koin_version"
+    implementation "org.koin:koin-androidx-scope:$versions.koin_version"
+
+    testImplementation "org.koin:koin-test:$versions.koin_version"
+    androidTestImplementation "org.koin:koin-test:$versions.koin_version"
+
+    implementation "com.squareup.retrofit2:converter-scalars:$versions.retrofit_scalars"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit_rxjava2"
+
+    //dagger version
+    implementation "com.google.dagger:dagger-android:$versions.dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$versions.dagger_version"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$versions.dagger_version"
+
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$versions.retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$versions.retrofit"
+    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$versions.retrofit_coroutines_adapter"
+
+    implementation "io.reactivex.rxjava2:rxandroid:2.0.1"
+    implementation "io.reactivex.rxjava2:rxkotlin:2.1.0"
+
+    // ViewModel and LiveData
+
+    annotationProcessor "android.arch.lifecycle:compiler:$versions.androidArchitectureVersion"
+    testImplementation "android.arch.core:core-testing:$versions.androidArchitectureVersion"
+
+    implementation "androidx.lifecycle:lifecycle-extensions:$versions.lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle_version"
+
+    implementation "org.jetbrains.anko:anko-commons:$versions.anko_version"
+    implementation "org.jetbrains.anko:anko-design:$versions.anko_version" // For SnackBars
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation "com.google.android.gms:play-services-auth:$versions.google_play_service_version"
+
+
+
+    //SDP Android(For Different Dimens)
+    implementation "com.intuit.sdp:sdp-android:$versions.sdp_android"
+
+
+}
